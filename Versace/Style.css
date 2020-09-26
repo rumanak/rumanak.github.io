@@ -1,0 +1,92 @@
+body {
+	background-color: rgb(209, 198, 191);
+}
+
+section {
+  margin: auto;
+  padding: 1px; 
+  width: 650px;
+}
+
+.right {
+  width: 20%;
+  float: right;
+}
+
+.left {
+  width: 20%;
+  float: left;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	color: red;
+	font-family: Montserrat, Helvetica, Arial;
+	font-size: 40px;
+}
+
+h2 {
+	text-decoration: underline;
+	color: red;
+	font-family: Helvetica, Arial;
+	font-size: 30px;
+}
+
+h4 {
+	text-align: center;
+	font-family: Georgia; 
+	font-size: 20px;
+	color: white;
+}
+
+p {
+	text-align: center;
+	padding: 15px;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+table, th, td {
+  border: solid rgb(209, 198, 191);
+  border-left-width: 50px;
+  border-right-width: 50px;
+  margin: auto;
+}
+
+
+.bigger {
+  margin: auto;
+  padding: 1px; 
+  width: 95%;
+  height: 400px;
+  text-align: center;
+  border: solid black 2px;
+}
+
+.centertext {
+  text-decoration: underline;
+  color: red;
+  font-family: Helvetica, Arial;
+  font-size: 30px;
+  text-align: center;
+}
+
+.centerimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
