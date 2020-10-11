@@ -1,0 +1,55 @@
+body{
+  text-align: center;
+  background: url('brok.gif');
+  background-color: #000000;
+  background-size: cover;
+}
+h1{
+	font-size: 8vw;
+	font-family: 'Dancing Script', Arial;
+	color: darkred;
+}
+h2{
+	font-size: 5vw;
+	font-family: Roboto, Georgia;
+}
+h3{
+	font-size: 3vw;
+	font-family: Arial;
+	color: white;
+}
+a:link{
+  color: slateblue;
+  text-decoration: none;
+}
+a:visited{
+  color: slateblue;
+}
+a:hover{
+  color: darkgrey;
+}
+#flexbox{
+	display: flex;
+	height: 30vh;
+  width: 82vw;
+  justify-content: flex-end;
+}
+.flexthing{
+	height: 30vh;
+	width: 20vw;
+}
+li {
+  font-size: 3vw;
+}
+#list {
+  background-color: black;
+  color: white;
+}
+.options {
+  text-align: center;
+  display: block;
+}
+.crossout{
+  text-decoration: line-through;
+  text-decoration-color: #ff0000;
+}
