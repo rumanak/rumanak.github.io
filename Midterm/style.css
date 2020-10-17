@@ -12,18 +12,73 @@ h2 {
 	text-align: center;
 	color: #302F4D;
 	font-family: Montserrat, Helvetica, Arial;
-	font-size: 20px;
+	font-size: 22px;
+}
+h3 {
+  text-align: center;
+  color: #302F4D;
+  font-family: Montserrat, Helvetica, Arial;
+  font-size: 12px;
+}
+h4 {
+  text-align: center;
+  color: #F0D3F7;
+  font-family: Montserrat, Helvetica, Arial;
+  font-size: 20px;
+  text-decoration: underline;
+}
+p {
+  text-align: center;
 }
 .grid-container {
   display: grid;
   grid-gap: 50px 100px;
   grid-template-columns: auto auto auto;
   background-color: #B98EA7;
-  padding: 10px;
+  padding: 5px;
 }
 .grid-item {
   background-color: #F0D3F7;
   border: 5px solid;
+  border-color: #F0D3F7
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-contain {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #F0D3F7;
+  padding: 10px;
+}
+.grid-thing {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+.button {
+  background-color: #302F4D;
+  border: none;
+  color: white;
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+.grid-container2 {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: auto auto;
+  background-color: #B98EA7;
+  padding: 45px;
+}
+.grid-items {
+  background-color: #F0D3F7;
+  border: 20px solid;
   border-color: #F0D3F7
   padding: 20px;
   font-size: 30px;
