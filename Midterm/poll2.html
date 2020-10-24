@@ -2,9 +2,21 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src = "poll2.js"></script>
 </head>
+
+<header>
+    <a class="navLinks" href="intro.html"><b>Home</b></a>
+    <a class="navLinks" href="contro.html">The Issue</a>
+    <a class="navLinks" href="pro.html">Pros & Cons</a>
+    <h5> The SHSAT </h5>
+    <a class="navLinks" href="mypov.html">My Opinion</a>
+    <a class="navLinks" href="poll2.html">Mini-Quiz</a>
+    <a class="navLinks" href="resources.html">Resources</a>
+</header>
+
 <body>
 
 	<h1> Here are some sample questions on the SHSAT! Try to solve it quickly! </h1>
@@ -12,18 +24,19 @@
 	<section>
 
 	<form id = "quiz" name = "quiz">
+	<fieldset>
 
-	<img src="https://imgur.com/XCKmHf6.png" style="width:650px;height:350px;"> 
+	<img src="https://imgur.com/XCKmHf6.png" style="width:650px;height:350px;" class="center"> 
 
-	<h5> What is the value of p?</h5>
+	<h6> How should the paragraph be revised?</h6>
 	<input type = "radio" id = "mc" name = "question1" value = "a"> a <br>
 	<input type = "radio" id = "mc" name = "question1" value = "b"> b <br>
 	<input type = "radio" id = "mc" name = "question1" value = "c"> c<br>
 	<input type = "radio" id = "mc" name = "question1" value = "d"> d <br>
 
-	<img src="https://imgur.com/jkfP23r.png" style="width:450px;height:300px;"> 
+	<img src="https://imgur.com/jkfP23r.png" style="width:450px;height:300px;" class="center"> 
 
-	<h5> What is the value of p?</h5>
+	<h6> What is the value of p?</h6>
 	<input type = "radio" id = "mc" name = "question2" value = "a"> a <br>
 	<input type = "radio" id = "mc" name = "question2" value = "b"> b <br>
 	<input type = "radio" id = "mc" name = "question2" value = "c"> c <br>
@@ -32,16 +45,13 @@
 	<input id = "button" type = "button" value = "Submit!" onclick = "check();">
 
 	</form>
-
+	</fieldset>
 	</section>
 
 	<div id = "after_submit">
 	<p id = "number_correct"></p>
 	</div>
 	</html>
-
-	<a href="intro.html" class="button">Intro Page</a>
-	<a href="mypov.html" class="button">Last Page</a>
 
 </body>
 </html>

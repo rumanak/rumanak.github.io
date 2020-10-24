@@ -1,5 +1,28 @@
 body {
-	background-color: #B98EA7;
+  margin: 0;
+	height: 100%;
+  background-color: #B98EA7; 
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background: #F0D3F7;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.navLinks {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #A57982;
+  padding: 3vw;
+}
+a.navLinks:visited {
+  color: #383131;
+}
+a.navLinks:hover {
+  color: white;
 }
 h1 {
 	text-align: center;
@@ -13,6 +36,8 @@ h2 {
 	color: #302F4D;
 	font-family: Montserrat, Helvetica, Arial;
   font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 h3 {
   text-align: center;
@@ -27,8 +52,22 @@ h4 {
   font-size: 20px;
   text-decoration: underline;
 }
-p {
+h5 {
   text-align: center;
+  color: #302F4D;
+  font-family: 'Dancing Script', Arial;
+  font-size: 22px;
+}
+h6 {
+  font-size:20px;
+  text-align: center;
+}
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial;
 }
 .grid-container {
   display: grid;
@@ -86,4 +125,27 @@ p {
 }
 #after_submit {
   visibility: hidden;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+fieldset{
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .grid-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid-thing {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid-items {
+    width: 100%;
+  }
 }
