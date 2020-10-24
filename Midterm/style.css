@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 	height: 100%;
@@ -91,8 +94,7 @@ p {
   background-color: #F0D3F7;
   padding: 10px;
 }
-.grid-thing {
-  border: 1px solid black;
+.gird-thing {
   text-align: center;
   font-size: 30px;
 }
@@ -135,17 +137,30 @@ fieldset{
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  .grid-item {
-    width: 100%;
+  .grid-container{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto;
+    background-color: #B98EA7;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 800px) {
-  .grid-thing {
-    width: 100%;
+  .grid-contain{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: #F0D3F7;
+    padding: 10px;
   }
+ 
 }
 @media screen and (max-width: 800px) {
-  .grid-items {
-    width: 100%;
+  .grid-container2{
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: auto;
+    background-color: #B98EA7;
+    padding: 45px;
   }
 }
