@@ -1,0 +1,29 @@
+body {
+  background-color: blue;
+}
+#box {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-image: url("star.gif")
+
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url("star2.png")
+}
+
+button {
+ padding: 20px;
+ border-radius: 25px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+button:hover {
+ background-color: yellow;
+ border: 5px solid rgb(0,0,0);
+}
