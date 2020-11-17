@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="among.js"></script>
+</head>
+
+<body>
+
+	<h1> Here are some sample questions on the SHSAT! Try to solve it quickly! </h1>
+
+	<form id = "quiz" name = "quiz">
+
+	<h2> Do like stability in your life? Or do you like to be implusive?</h2>
+	<input type = "radio" id = "mc" name = "question1" value = "red"> Yes, I NEED Stability <br>
+	<input type = "radio" id = "mc" name = "question1" value = "blue"> I like having more stability than chaos<br>
+	<input type = "radio" id = "mc" name = "question1" value = "lime"> I need an equal mix of both! <br>
+	<input type = "radio" id = "mc" name = "question1" value = "pink"> I like to be more implusive in my life <br>
+	<input type = "radio" id = "mc" name = "question1" value = "white"> Nope,I like to be Implusive! <br>
+
+	<h2> Are you generally trusting of people?</h2>
+	<input type = "radio" id = "mc" name = "question2" value = "red"> Yes <br>
+	<input type = "radio" id = "mc" name = "question2" value = "blue"> Yes, if they seem trustworthy <br>
+	<input type = "radio" id = "mc" name = "question2" value = "lime"> It depends on the situation <br>
+	<input type = "radio" id = "mc" name = "question2" value = "pink"> No, if they seem shady <br>
+	<input type = "radio" id = "mc" name = "question2" value = "white"> No <br>
+
+	<h2> Is your personality serious or laidback? </h2>
+	<input type = "radio" id = "mc" name = "question3" value = "red"> Serious <br>
+	<input type = "radio" id = "mc" name = "question3" value = "blue"> I'm pretty serious in general <br>
+	<input type = "radio" id = "mc" name = "question3" value = "lime"> It can be either <br>
+	<input type = "radio" id = "mc" name = "question3" value = "pink"> I'm usually laidback <br>
+	<input type = "radio" id = "mc" name = "question3" value = "white"> Laidback <br>
+
+	<h2> When working with a group of people, what role do you take on?</h2>
+	<input type = "radio" id = "mc" name = "question4" value = "red"> The Leader, who calls the shots <br>
+	<input type = "radio" id = "mc" name = "question4" value = "blue"> The Peacekeeper, who stops disagreements <br>
+	<input type = "radio" id = "mc" name = "question4" value = "lime"> The Editor, who looks everything over <br>
+	<input type = "radio" id = "mc" name = "question4" value = "pink"> Just a member <br>
+	<input type = "radio" id = "mc" name = "question4" value = "white"> I like to work alone <br>
+
+	<h2> How long does it take you to get work done?</h2>
+	<input type = "radio" id = "mc" name = "question5" value = "red"> I get it done ASAP <br>
+	<input type = "radio" id = "mc" name = "question5" value = "blue"> I procrastinate a little bit <br>
+	<input type = "radio" id = "mc" name = "question5" value = "lime"> It depends on the task <br>
+	<input type = "radio" id = "mc" name = "question5" value = "pink"> I try my best to get it done, but it takes awhile <br>
+	<input type = "radio" id = "mc" name = "question5" value = "white"> I procrastinate a lot <br>
+
+	<h2> Do you stand out in crowd?</h2>
+	<input type = "radio" id = "mc" name = "question6" value = "red"> Yes <br>
+	<input type = "radio" id = "mc" name = "question6" value = "lime"> Sometimes <br>
+	<input type = "radio" id = "mc" name = "question6" value = "white"> No <br>
+
+	<h2> Do you like to be the imposter?</h2>
+	<input type = "radio" id = "mc" name = "question7" value = "red"> Yes <br>
+	<input type = "radio" id = "mc" name = "question7" value = "lime"> Sometimes <br>
+	<input type = "radio" id = "mc" name = "question7" value = "white"> No <br>
+
+	<br>
+	<br>
+
+	<input id = "button" type = "button" value = "Submit!" onclick = "check();">
+
+	</form>
+
+	<div id = "after_submit">
+	<p id = "number_choice"></p>
+	</div>
+	</html>
+
+</body>
+</html>
