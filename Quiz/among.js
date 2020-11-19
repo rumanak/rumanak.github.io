@@ -51,4 +51,46 @@ var you;
 
 document.getElementById("after_submit").style.visibility = "visible";
 document.getElementById("number_choice").innerHTML = "You got " + you + ".";
+
+if (you == "red"){
+	document.getElementById("blue1").style.display = "none";
+	document.getElementById("lime1").style.display = "none";
+	document.getElementById("pink1").style.display = "none";
+	document.getElementById("white1").style.display = "none";
+}
+else if (you == "blue"){
+	document.getElementById("blue1").style.display = "block";
+	document.getElementById("red1").style.display = "none";
+	document.getElementById("pink1").style.display = "none";
+	document.getElementById("lime1").style.display = "none";
+	document.getElementById("white1").style.display = "none;"
+}
+else if (you == "lime"){
+	document.getElementById("pink1").style.display = "none";
+	document.getElementById("red1").style.display = "none";
+	document.getElementById("blue1").style.display = "none";
+	document.getElementById("lime1").style.display = "block";
+	document.getElementById("white1").style.display = "none";
+}
+else if (you == "pink"){
+	document.getElementById("pink1").style.display = "block";
+	document.getElementById("red1").style.display = "none";
+	document.getElementById("blue1").style.display = "none";
+	document.getElementById("lime1").style.display = "none";
+	document.getElementById("white1").style.display = "none";
+}
+else if (you == "white"){
+	document.getElementById("pink1").style.display = "none";
+	document.getElementById("red1").style.display = "none";
+	document.getElementById("blue1").style.display = "none";
+	document.getElementById("lime1").style.display = "none";
+	document.getElementById("white1").style.display = "block";
+}
+
+$( "#after_submit" ).click(function() {
+  	$( "#red" ).slideDown( "slow", function() {
+    // Animation complete.
+  	});
+});
+
 }
