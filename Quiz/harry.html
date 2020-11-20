@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script src="harry.js"></script>
+</head>
+
+<body>
+
+	<h1> What Hogwarts House do you belong in the Harry Potter World? Answer these questions to find out! </h1>
+
+	<form id = "quiz2" name = "quiz2">
+
+	<h2> What quality do you value the most? </h2>
+	<input type = "radio" id = "mc" name = "question1" value = "G"> Bravery <br>
+	<input type = "radio" id = "mc" name = "question1" value = "H"> Loyalty <br>
+	<input type = "radio" id = "mc" name = "question1" value = "R"> Intelligence <br>
+	<input type = "radio" id = "mc" name = "question1" value = "S"> Ambition <br>
+
+	<h2> What do you want the most? </h2>
+	<input type = "radio" id = "mc" name = "question2" value = "G"> Glory <br>
+	<input type = "radio" id = "mc" name = "question2" value = "H"> Love <br>
+	<input type = "radio" id = "mc" name = "question2" value = "R"> Wisdom <br>
+	<input type = "radio" id = "mc" name = "question2" value = "S"> Power <br>
+
+	<h2> What would you be least likely called? </h2>
+	<input type = "radio" id = "mc" name = "question3" value = "G"> Cowardly <br>
+	<input type = "radio" id = "mc" name = "question3" value = "H"> Selfish <br>
+	<input type = "radio" id = "mc" name = "question3" value = "R"> Ignorant <br>
+	<input type = "radio" id = "mc" name = "question3" value = "S"> Ordinary <br>
+
+	<h2> How far would you go to achieve your goals? </h2>
+	<input type = "radio" id = "mc" name = "question4" value = "S"> Any means can justify the ends <br>
+	<input type = "radio" id = "mc" name = "question4" value = "H"> I will try everything that complies to the rules <br>
+	<input type = "radio" id = "mc" name = "question4" value = "R"> I will research as much as possible to achieve them <br>
+	<input type = "radio" id = "mc" name = "question4" value = "G"> I will be dedicated and presistent <br>
+
+	<h2> Your friends and you are attacked, what do you do? </h2>
+	<input type = "radio" id = "mc" name = "question5" value = "G"> I will attack back right away, which protects my friends <br>
+	<input type = "radio" id = "mc" name = "question5" value = "H"> I will protect my friends <br>
+	<input type = "radio" id = "mc" name = "question5" value = "R"> I have a plan ready <br>
+	<input type = "radio" id = "mc" name = "question5" value = "S"> I will lead my friends to safety <br>
+
+	<h2> What's your spirit animal?  </h2>
+	<input type = "radio" id = "mc" name = "question6" value = "G"> Lion <br>
+	<input type = "radio" id = "mc" name = "question6" value = "H"> Badger <br>
+	<input type = "radio" id = "mc" name = "question6" value = "R"> Rave <br>
+	<input type = "radio" id = "mc" name = "question6" value = "S"> Serpant  <br>
+
+	<h2> What would you magic for? </h2>
+	<input type = "radio" id = "mc" name = "question7" value = "G"> To protect those I love <br>
+	<input type = "radio" id = "mc" name = "question7" value = "H"> To help others <br>
+	<input type = "radio" id = "mc" name = "question7" value = "R"> To make amazing discoveries <br>
+	<input type = "radio" id = "mc" name = "question7" value = "S"> To gain power <br>
+
+	<h2> Would you look at your partner's unlocked phone?  </h2>
+	<input type = "radio" id = "mc" name = "question8" value = "G"> No, I trust them <br>
+	<input type = "radio" id = "mc" name = "question8" value = "H"> If it was okay with them, yes <br>
+	<input type = "radio" id = "mc" name = "question8" value = "R"> Unintentionally yes <br>
+	<input type = "radio" id = "mc" name = "question8" value = "S"> Yes, they have nothing to hide <br>
+
+	<h2> Pick an extracurrilar activity  </h2>
+	<input type = "radio" id = "mc" name = "question9" value = "G"> Sports <br>
+	<input type = "radio" id = "mc" name = "question9" value = "H"> Environmental Club <br>
+	<input type = "radio" id = "mc" name = "question9" value = "R"> Student Council <br>
+	<input type = "radio" id = "mc" name = "question9" value = "S"> Dueling Club  <br>
+
+	<h2> Save a stranger or save yourself?  </h2>
+	<input type = "radio" id = "mc" name = "question10" value = "G"> Stranger first, then myself <br>
+	<input type = "radio" id = "mc" name = "question10" value = "R"> I can do both! <br>
+	<input type = "radio" id = "mc" name = "question10" value = "H"> Stranger <br>
+	<input type = "radio" id = "mc" name = "question10" value = "S"> Myself <br>
+
+	<h2> Pick a color  </h2>
+	<input type = "radio" id = "mc" name = "question11" value = "H"> Yellow <br>
+	<input type = "radio" id = "mc" name = "question11" value = "R"> Blue <br>
+	<input type = "radio" id = "mc" name = "question11" value = "G"> Red <br>
+	<input type = "radio" id = "mc" name = "question11" value = "S"> Green <br>
+
+	<br>
+	<br>
+
+	<input id = "button" type = "button" value = "Submit!" onclick = "check();">
+
+	</form>
+
+	<div id = "after_submit">
+		<p> RESULTS </p>
+		<p id = "number_choice">
+		</p>
+	</div>
+	</html>
+
+</body>
+</html>
