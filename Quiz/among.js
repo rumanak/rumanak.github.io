@@ -63,7 +63,7 @@ else if (you == "blue"){
 	document.getElementById("red1").style.display = "none";
 	document.getElementById("pink1").style.display = "none";
 	document.getElementById("lime1").style.display = "none";
-	document.getElementById("white1").style.display = "none;"
+	document.getElementById("white1").style.display = "none";
 }
 else if (you == "lime"){
 	document.getElementById("pink1").style.display = "none";

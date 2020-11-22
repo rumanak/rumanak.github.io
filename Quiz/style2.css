@@ -1,5 +1,6 @@
 body{
   background-color: #000000;
+  padding: 10px;
 }
 
 img {
@@ -14,18 +15,26 @@ h1 {
 }
 
 h2 {
-  color: #52057B;
+  color: #BC6FF1;
 }
 
 p {
   color: white;
+  font-size: 20px;
 }
 
 #quiz2 {
   color: white;
 }
 
-.button {
+aside {
+  width: 50%;
+  padding-left: 1px;
+  margin-left: 1px;
+  float: right;
+}
+
+#button {
   background-color: #892CDC;
   border-radius: 15px;
   color: white;
@@ -39,5 +48,18 @@ p {
 }
 
 #after_submit {
+  visibility: hidden;
+}
+
+#GD {
+  visibility: hidden;
+}
+#HD {
+  visibility: hidden;
+}
+#RD {
+  visibility: hidden;
+}
+#SD {
   visibility: hidden;
 }

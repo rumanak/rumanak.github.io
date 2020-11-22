@@ -5,12 +5,16 @@
     <meta charset="utf-8">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="style2.css">
-	<script src="harry.js"></script>
+	<script src="harry.js"> </script>
 </head>
 
 <body>
 
-	<h1> What Hogwarts House do you belong in the Harry Potter World? Answer these questions to find out! </h1>
+	<h1> What Hogwarts House do you belong in? Answer these questions to find out! </h1>
+
+	<aside>
+	<img src="hogwarts.jpg" style="width:480px;height:270px;">
+	</aside>
 
 	<form id = "quiz2" name = "quiz2">
 
@@ -38,8 +42,8 @@
 	<input type = "radio" id = "mc" name = "question4" value = "R"> I will research as much as possible to achieve them <br>
 	<input type = "radio" id = "mc" name = "question4" value = "G"> I will be dedicated and presistent <br>
 
-	<h2> Your friends and you are attacked, what do you do? </h2>
-	<input type = "radio" id = "mc" name = "question5" value = "G"> I will attack back right away, which protects my friends <br>
+	<h2> You and your friends are attacked, what do you do? </h2>
+	<input type = "radio" id = "mc" name = "question5" value = "G"> I will attack back right away <br>
 	<input type = "radio" id = "mc" name = "question5" value = "H"> I will protect my friends <br>
 	<input type = "radio" id = "mc" name = "question5" value = "R"> I have a plan ready <br>
 	<input type = "radio" id = "mc" name = "question5" value = "S"> I will lead my friends to safety <br>
@@ -47,10 +51,10 @@
 	<h2> What's your spirit animal?  </h2>
 	<input type = "radio" id = "mc" name = "question6" value = "G"> Lion <br>
 	<input type = "radio" id = "mc" name = "question6" value = "H"> Badger <br>
-	<input type = "radio" id = "mc" name = "question6" value = "R"> Rave <br>
+	<input type = "radio" id = "mc" name = "question6" value = "R"> Raven <br>
 	<input type = "radio" id = "mc" name = "question6" value = "S"> Serpant  <br>
 
-	<h2> What would you magic for? </h2>
+	<h2> What would you use magic for? </h2>
 	<input type = "radio" id = "mc" name = "question7" value = "G"> To protect those I love <br>
 	<input type = "radio" id = "mc" name = "question7" value = "H"> To help others <br>
 	<input type = "radio" id = "mc" name = "question7" value = "R"> To make amazing discoveries <br>
@@ -88,11 +92,32 @@
 	</form>
 
 	<div id = "after_submit">
-		<p> RESULTS </p>
+		<h2> RESULTS </h2>
 		<p id = "number_choice">
 		</p>
+
+		<p id = "description"> Below are the four houses. 
+		<br>
+		Click on the images to reveal your house! </p>
+
+	<img id ="GR" src="g.gif" alt="" width=200px height=250p>
+	<img id ="RA" src="r.gif" alt="" width=200px height=250p>
+	<img id ="HP" src="h.gif" alt="" width=200px height=250p>
+	<img id ="SY" src="s.gif" alt="" width=200px height=250p>
+
+	<p id = "GD"> Congrats! You are in Gryffindor! Orginally founded by Godric Gryffindor, this house represents fire.
+	You are probably brave, courageous, determined, and chivalrous! Some famous students from Gryffindor is Harry Potter and Hermione Granger! </p>
+	<p id = "HD">Congrats! You are in Hufflepuff! Orginally founded by Helga Hufflepuff, this house represents earth. 
+	You are probably hard-working, patient, and loyal. Hufflepuff is the most inclusive house, so you are accepting of everyone!
+	Some famous students are Cedric Diggory and Nymphadora Tonks! </p>
+	<p id = "RD"> Congrats! You are in Ravenclaw! Orginally founded by Rowena Rawenclaw, this house represents air. 
+	You are probably very intelligent and creative! You use your intelligence to get out of sticky situations. Some famous students from your house is Luna Lovegood and Cho Chang. </p>
+	<p id = "SD">Congrats! You are in Slytherin! Orginally founded by Salazar Slytherin, this house represents water.
+	You are probably ambitionous, prideful, and cunning! Slytherin can get a bad reputation, but Slytherins make for strong leaders! Some famous Slytherins are Severus Snape and Horace Slughorn.</p>
+
 	</div>
 	</html>
+
 
 </body>
 </html>

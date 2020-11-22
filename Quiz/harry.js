@@ -42,6 +42,100 @@ var you;
 	}
 
 document.getElementById("after_submit").style.visibility = "visible";
-document.getElementById("number_choice").innerHTML = "You belong in " + you + ".";
+
+var x = 300;
+var y = 375;
+var p = document.getElementById('description');
 	
+
+$( "#after_submit" ).click(function() {
+	if (you == "Slytherin"){
+		$( "#SY" ).slideDown( "slow", function() {
+			document.getElementById("SY").style.width = x + "px";
+			document.getElementById("SY").style.height = y + "px";
+			document.getElementById("number_choice").innerHTML = "You belong in " + you.fontcolor("green") + ".";
+			p.remove();
+			document.getElementById("SD").style.visibility = "visible";
+  		});
+  		$( "#GR").hide( function() {
+  			$( "#GR").remove();
+  		});
+  		$( "#GD").hide( function() {
+  			$( "#GD").remove();
+  		});
+  		$( "#RA").hide( function() {
+  			$( "#RA").remove();
+  		});
+  		$( "#HP").hide( function() {
+  			$( "#HP").remove();
+  		});
+  		$( "#GD").remove();
+  		$( "#HD").remove();
+  		$( "#RD").remove();
+	}
+	else if (you == "Gryffindor"){
+		$( "#GR").slideDown( "slow", function() {
+			document.getElementById("GR").style.width = x + "px";
+			document.getElementById("GR").style.height = y + "px";
+			document.getElementById("number_choice").innerHTML = "You belong in " + you.fontcolor("red") + ".";
+			p.remove();
+			document.getElementById("GD").style.visibility = "visible";
+  		});
+  		$( "#SY").hide( function() {
+  			$( "#SY").remove();
+  		});
+  		$( "#RA").hide( function() {
+  			$( "#RA").remove();
+  		});
+  		$( "#HP").hide( function() {
+  			$( "#HP").remove();
+  		});
+  		$( "#SD").remove();
+  		$( "#HD").remove();
+  		$( "#RD").remove();
+	}
+	else if (you == "Ravenclaw"){
+		$( "#RA" ).slideDown( "slow", function() {
+			document.getElementById("RA").style.width = x + "px";
+			document.getElementById("RA").style.height = y + "px";
+			document.getElementById("number_choice").innerHTML = "You belong in " + you.fontcolor("blue") + ".";
+			p.remove();
+			document.getElementById("RD").style.visibility = "visible";
+  		});
+  		$( "#GR").hide( function() {
+  			$( "#GR").remove();
+  		});
+  		$( "#SY").hide( function() {
+  			$( "#SY").remove();
+  		});
+  		$( "#HP").hide( function() {
+  			$( "#HP").remove();
+  		});
+  		$( "#GD").remove();
+  		$( "#HD").remove();
+  		$( "#SD").remove();
+	}
+	else if (you == "Hufflepuff"){
+		$( "#HP" ).slideDown( "slow", function() {
+			document.getElementById("HP").style.width = x + "px";
+			document.getElementById("HP").style.height = y + "px";
+			document.getElementById("number_choice").innerHTML = "You belong in " + you.fontcolor("yellow") + ".";
+			p.remove();
+			document.getElementById("HD").style.visibility = "visible";
+  		});
+  		$( "#GR").hide( function() {
+  			$( "#GR").remove();
+  		});
+  		$( "#RA").hide( function() {
+  			$( "#RA").remove();
+  		});
+  		$( "#SY").hide( function() {
+  			$( "#SY").remove();
+  		});
+  		$( "#GD").remove();
+  		$( "#SD").remove();
+  		$( "#RD").remove();
+	}
+});
+
 }
