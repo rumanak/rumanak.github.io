@@ -1,6 +1,10 @@
 body{
-  background-color: #BC6FF1;
+  background: url(http://www.zingerbugimages.com/backgrounds/purple_starry_sky_glitter_background_seamless.gif);
   background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
 }
 
 img {
@@ -12,10 +16,34 @@ img {
 
 h1 {
   color: #892CDC;
+  border-style: solid;
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 44px; 
+  border-radius: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
 }
 
 h2 {
   color: #52057B;
+  border-style: solid;
+  float: center;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#quiz  {
+  color: white; 
+  float: inherit;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+
 }
 
 .button {
@@ -33,5 +61,9 @@ h2 {
 
 #after_submit {
   visibility: hidden;
+  float: inline-end;
+  color: white;
 }
-
+#number_choice {
+  color: white;
+}
