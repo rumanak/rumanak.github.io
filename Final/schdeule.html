@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="try.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <header>
+    <h1> Kids’ timetable generator</h1>
+  </header>
+  <div class="button-wrapper">
+    <button data-btn type="button">Sort activities</button>
+    <button class="clear-button" data-clear type="button">Clear timetable</button>
+  </div>
+  <div class="grid">
+    <table>
+      <thead>
+        <th scope="col">Time</th>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">7:30am</th>
+          <td><span>Breakfast</span></td>
+          <td><span>Breakfast</span></td>
+          <td><span>Breakfast</span></td>
+          <td><span>Breakfast</span></td>
+          <td><span>Breakfast</span></td>
+        </tr>
+        <tr class="bg-yellow">
+          <th scope="row">9:00am</th>
+          <td><span>Exercise</span></td>
+          <td><span>Exercise</span></td>
+          <td><span>Exercise</span></td>
+          <td><span>Exercise</span></td>
+          <td><span>Exercise</span></td>
+        </tr>
+        <tr class="bg-green">
+          <th scope="row">9:30am</th>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+        </tr>
+        <tr>
+          <th scope="row">10:00am</th>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+        </tr>
+        <tr>
+          <th scope="row">11:00am</th>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+        </tr>
+        <tr>
+          <th scope="row">12:00</th>
+          <td><span>Lunch</span></td>
+          <td><span>Lunch</span></td>
+          <td><span>Lunch</span></td>
+          <td><span>Lunch</span></td>
+          <td><span>Lunch</span></td>
+        </tr>
+        <tr class="bg-green">
+          <th scope="row">1:00pm</th>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+          <td><span>Free play</span></td>
+        </tr>
+        <tr>
+          <th scope="row">2:00pm</th>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+        </tr>
+        <tr>
+          <th scope="row">3:00pm</th>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+        </tr>
+        <tr>
+          <th scope="row">4:00pm</th>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+          <td data-cell></td>
+        </tr>
+        <tr class="bg-green">
+          <th scope="row">5:00pm</th>
+          <td><span>Free play/TV</span></td>
+          <td><span>Free play/TV</span></td>
+          <td><span>Free play/TV</span></td>
+          <td><span>Free play/TV</span></td>
+          <td><span>Free play/TV</span></td>
+        </tr>
+        <tr>
+          <th scope="row">6:00pm</th>
+          <td><span>Dinner</span></td>
+          <td><span>Dinner</span></td>
+          <td><span>Dinner</span></td>
+          <td><span>Dinner</span></td>
+          <td><span>Dinner</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul class="activities" data-activities>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: -2deg">Baking</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: -4deg">Painting</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: 2.5deg">Painting</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: 1.25deg">Treasure hunt</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: -2deg">Cutting and sticking</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: 2.5deg">Cutting and sticking</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: -4deg">Drawing/writing practice</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: 1.25deg">Drawing/writing practice</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: -2deg">Indoor games</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: 2.5deg">Board games/puzzles</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: -4deg">Nature walk</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: 1.25deg">Outdoor games</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: -4deg">Building blocks/Lego</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: 2.5deg">Play-doh</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: -2deg">Stickers</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: 1.25deg">Making/crafting</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: -4deg">Shopping</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: -2deg">Monster truck race course</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: -4deg">Running</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: 1.25deg">Running</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: -2deg">Reading</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5; --r: -4deg">Family Facetime</div>
+      </li>
+      <li>
+        <div class="activity" style="--r: 2.5deg">Gardening</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #adff8a; --r: 1.25deg">Cars</div>
+      </li>
+      <li>
+        <div class="activity" style="--bg: #ff8af5;   --r: 2.5deg">Chalks</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

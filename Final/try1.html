@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="hours.js"></script>
+</head>
+
+<header>
+    <a class="navLinks" href="intro.html"><b>Home</b></a>
+    <a class="navLinks" href="over.html">An Overview</a>
+    <h5> The American College System </h5>
+    <a class="navLinks" href="flaws.html">The Flaws</a>
+    <a class="navLinks" href="try1.html">Stimulation</a>
+</header>
+
+<body>
+
+	<h1> A Busy Schedule for the Average College Student </h1>
+
+    <div class = "Questions">
+    	<form id = "ask" name = "ask">
+    	<h5> There are 168 Hours in a week </h5>
+        <h5> How many hours do you plan to sleep a week? </h5>
+        <input id = "textbox" type = "number" name = "question1">
+        <h5> How many credit-hours are you taking in school? </h5>
+        <input id = "textbox" type = "number" name = "question2">
+        <h5> How many hours will you spend on hw each week? </h5>
+        <input id = "textbox" type = "number" name = "question3">
+        <h5> How many hours will you work a week? </h5>
+        <input id = "textbox" type = "number" name = "question4">
+
+        <input id = "button" type = "button" value = "Done!" onclick = "check();">
+    </form>
+	</div>
+
+	<div id = "after_submit">
+	<p id = "number_correct"></p>
+	</div>
+	</html>
+      
+		<div class = "grid">
+			<table>
+				<thead>
+        			<th>Time</th>
+        			<th>Monday</th>
+        			<th>Tuesday</th>
+        			<th>Wednesday</th>
+        			<th>Thursday</th>
+        			<th>Friday</th>
+        			<th>Saturday</th>
+        			<th>Sunday</th>
+      			</thead>
+      			<tbody>
+              <tr>
+                  <th scope="row">6:00am</th>
+                  <td><span>Wake Up</span></td>
+                  <td><span>Wake Up</span></td>
+                  <td><span>Wake Up</span></td>
+                  <td><span>Wake Up</span></td>
+                  <td><span>Wake Up</span></td>
+              </tr>
+        			<tr>
+          				<th scope="row">7:00am</th>
+          				<td><span>Breakfast</span></td>
+          				<td><span>Breakfast</span></td>
+          				<td><span>Breakfast</span></td>
+          				<td><span>Breakfast</span></td>
+          				<td><span>Breakfast</span></td>
+        			</tr>
+        			<tr class="bg-yellow">
+          				<th scope="row">8:00am</th>
+          				<td><span>Exercise</span></td>
+          				<td><span>Exercise</span></td>
+          				<td><span>Exercise</span></td>
+          				<td><span>Exercise</span></td>
+          				<td><span>Exercise</span></td>
+       				</tr>
+        			<tr class="bg-green">
+          				<th scope="row">9:00am</th>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+        			</tr>
+        			<tr>
+          				<th scope="row">10:00am</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+        			<tr>
+          				<th scope="row">11:00am</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+       				<tr>
+          				<th scope="row">12:00pm</th>
+          				<td><span>Lunch</span></td>
+          				<td><span>Lunch</span></td>
+          				<td><span>Lunch</span></td>
+          				<td><span>Lunch</span></td>
+          				<td><span>Lunch</span></td>
+        			</tr>
+        			<tr class="bg-green">
+          				<th scope="row">1:00pm</th>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+          				<td><span>Free play</span></td>
+        			</tr>
+        			<tr>
+          				<th scope="row">2:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        				</tr>	
+        			<tr>
+          			<th scope="row">3:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+        			<tr>
+          			<th scope="row">4:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+        			<tr class="bg-green">
+          				<th scope="row">5:00pm</th>
+         				<td><span>Free play/TV</span></td>
+          				<td><span>Free play/TV</span></td>
+          				<td><span>Free play/TV</span></td>
+          				<td><span>Free play/TV</span></td>
+          				<td><span>Free play/TV</span></td>
+        			</tr>
+        			<tr>
+          			<th scope="row">6:00pm</th>
+          				<td><span>Dinner</span></td>
+          				<td><span>Dinner</span></td>
+          				<td><span>Dinner</span></td>
+          				<td><span>Dinner</span></td>
+         				<td><span>Dinner</span></td>
+        			</tr>
+        			<tr>
+          			<th scope="row">7:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+        			<tr>
+          			<th scope="row">8:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+        			<tr>
+          			<th scope="row">9:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+        			<tr>
+          			<th scope="row">10:00pm</th>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+          				<td data-cell></td>
+        			</tr>
+              <tr>
+                <th scope="row">11:00pm</th>
+                  <td data-cell></td>
+                  <td data-cell></td>
+                  <td data-cell></td>
+                  <td data-cell></td>
+                  <td data-cell></td>
+              </tr>
+              <tr>
+                <th scope="row">12:00am</th>
+                  <td data-cell></td>
+                  <td data-cell></td>
+                  <td data-cell></td>
+                  <td data-cell></td>
+                  <td data-cell></td>
+              </tr>
+      		</tbody>
+   			</table>
+   		</div>
+   	</div>
+</body>
+</html>

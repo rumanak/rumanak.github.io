@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #C2C2FF; 
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background: #9999ff;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.navLinks {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #737FA5;
+  padding: 3vw;
+}
+a.navLinks:visited {
+  color: white;
+}
+a.navLinks:hover {
+  color: white;
+}
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	color: #B38888;
+	font-family: Montserrat, Helvetica, Arial;
+	font-size: 32px;
+}
+h2 {
+	text-align: center;
+	color: #737FA5;
+	font-family: Montserrat, Helvetica, Arial;
+  	font-size: 22px;
+  	padding-left: 1%;
+  	padding-right: 1%;
+}
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+  font-family: Montserrat, Helvetica, Arial;
+  font-size: 20px;
+}
+h4 {
+  text-align: center;
+  color: #C58282;
+  font-family: Montserrat, Helvetica, Arial;
+  font-size: 16px;
+}
+h5 {
+  color: #737FA5;
+  font-family: Montserrat, Helvetica, Arial;
+    font-size: 22px;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: #c2c2ff;
+  padding: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gird-item {
+  background-color: #c2c2ff;
+  font-size: 30px;
+  text-align: center;
+}
+.Questions{
+  padding-left: 20px;
+  padding: 1%;
+  background-color: #ffffc2;
+}
