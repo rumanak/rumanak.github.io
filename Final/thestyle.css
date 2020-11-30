@@ -35,22 +35,17 @@ h1 {
 	font-size: 32px;
 }
 h2 {
-  text-align: center;
 	color: #737FA5;
 	font-family: Montserrat, Helvetica, Arial;
   	font-size: 22px;
-  	padding-left: 1%;
-  	padding-right: 1%;
 }
 h3 {
-  text-align: center;
   text-decoration: underline;
   color: blue;
   font-family: Montserrat, Helvetica, Arial;
   font-size: 20px;
 }
 h4 {
-  text-align: center;
   color: #C58282;
   font-family: Montserrat, Helvetica, Arial;
   font-size: 16px;
@@ -75,15 +70,43 @@ h5 {
   font-size: 30px;
   text-align: center;
 }
+.grid-container2 {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: auto auto;
+  background-color: #ffffc2;
+  padding: 45px;
+}
+.grid-items {
+  background-color: #ffffc2;
+  border: 20px solid;
+  border-color: #ffffc2;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 .Questions{
   padding-left: 20px;
   padding: 1%;
   background-color: #ffffc2;
 }
-aside {
-  width:30%;
-  padding-left: 2%;
-  padding: 1%;
-  float: left;
-  background-color: #ffffc2;
+
+.first {
+text-align: left;
+border-style: ridge;
+padding-left: 2%;
+width: 85%;
+}
+
+.second {
+text-align: right;
+padding-right: 2%;
+width:100%;
+}
+
+.third {
+text-align: left;
+border-style: ridge;
+padding-left: 2%;
+width: 85%;
 }

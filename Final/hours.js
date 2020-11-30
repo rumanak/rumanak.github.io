@@ -4,13 +4,15 @@ var sleep = parseInt(document.ask.question1.value);
 var school = parseInt(document.ask.question2.value);
 var hw = parseInt(document.ask.question3.value);
 var work = parseInt(document.ask.question4.value);
+var chores = parseInt(document.ask.question5.value);
+
 
 var hours_start = 168;
 var hours_used;
 var hours_remain;
 var days;
 
-hours_used = sleep + school + hw + work;
+hours_used = sleep + school + hw + work + chores;
 hours_remain = hours_start - hours_used;
 days = parseInt(hours_remain/7);
 
