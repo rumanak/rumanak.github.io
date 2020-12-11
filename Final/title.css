@@ -4,7 +4,7 @@
 body {
   margin: 0;
   height: 100%;
-  background-color: #c2c2ff; 
+  background-color: #9999ff; 
 }
 header {
   display: flex;
@@ -36,7 +36,6 @@ h1 {
 }
 h2 {
   text-align: center;
-  text-decoration: underline;
 	color: #737FA5;
 	font-family: Montserrat, Helvetica, Arial;
   	font-size: 22px;
@@ -63,8 +62,6 @@ h5 {
 }
 p{
   text-align: center;
-  padding-left: 1%;
-  padding-right: 1%;
 }
 .blue {
   background-color: #c2c2ff; 
@@ -100,29 +97,4 @@ aside {
 #carousel-container {
     margin: 25px auto 0px auto;
     max-width: 90%;
-}
-
-.color {
-border-style: ridge;
-padding: 1%;
-width: 50%;
-margin-left: 42.5%;
-background-color: #D6D6FF;
-text-align: center;
-}
-
-.con {
-border-style: ridge;
-padding: 1%;
-width: 80%;
-background-color: #D6D6FF;
-text-align: center;  
-margin-left: auto;
-margin-right: auto;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
