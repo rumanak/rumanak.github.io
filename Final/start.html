@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="hours.js"></script>
 </head>
 
-<nav class="navbar navbar-dark" style="background-color: #9999ff;">
+  <nav class="navbar navbar-dark" style="background-color: #9999ff;">
       <a class="navbar-brand" href="#">The American College System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,34 +40,38 @@
           </li>
         </ul>
       </div>
-    </nav>
+  </nav>
+
 
 <body>
+    <h1> This is a Simulation Game </h1>
 
-	<h1> A Busy Schedule for the Average College Student </h1>
+    <h3> Please pick one of the following character </h3>
 
-    <div class = "Questions">
-    	<form id = "ask" name = "ask">
-    	<h5> There are 168 Hours in a week </h5>
-        <h5> How many hours do you plan to sleep a week? </h5>
-        <input id = "textbox" type = "number" name = "question1">
-        <h5> How many credit-hours are you taking in school? </h5>
-        <input id = "textbox" type = "number" name = "question2">
-        <h5> How many hours will you spend on hw each week? </h5>
-        <input id = "textbox" type = "number" name = "question3">
-        <h5> How many hours will you work a week? </h5>
-        <input id = "textbox" type = "number" name = "question4">
-        <h5> How many hours do you spend on household chores (cleaning and cooking)? </h5>
-        <input id = "textbox" type = "number" name = "question5">
+    <div class = "grid-container2">
 
-        <input id = "button" type = "button" value = "Done!" onclick = "check();">
-    </form>
-	</div>
+      <div class = "gird-items"> 
+        <img src="panda1.png" style="width:150px;height:360px;"> 
+        <p> Character A <br>
+        Commutes to a Public University. <br>
+        Cost of Attendance is 10k.  </p>
 
-	<div id = "after_submit">
-	<p id = "number_correct"></p>
-	</div>
-	</html>
-      
+        <a class="btn btn-primary" href="panda.html" role="button">NEXT!</a>
+      </div>
+
+      <div class = "gird-items"> 
+        <img src="polar.png" style="width:150px;height:360px;">
+        <p> Character B <br>
+        Resident at a Private Univeristy. <br>
+        Cost of Attendance is 65K. </p>
+
+        <a class="btn btn-primary" href="ice.html" role="button">NEXT!</a>
+      </div>
+
+
+    </div>
+
 </body>
 </html>
+
+

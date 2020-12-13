@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="hours.js"></script>
+    <script src="panda.js"></script>
 </head>
 
-<nav class="navbar navbar-dark" style="background-color: #9999ff;">
+  <nav class="navbar navbar-dark" style="background-color: #9999ff;">
       <a class="navbar-brand" href="#">The American College System</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,34 +41,39 @@
           </li>
         </ul>
       </div>
-    </nav>
+  </nav>
+
 
 <body>
 
-	<h1> A Busy Schedule for the Average College Student </h1>
+  <h1> You chose Character A! </h1>
 
-    <div class = "Questions">
-    	<form id = "ask" name = "ask">
-    	<h5> There are 168 Hours in a week </h5>
-        <h5> How many hours do you plan to sleep a week? </h5>
+  <h3> Time to make some decisions now! </h3>
+
+  <div class = "Questions">
+      <form id = "ask" name = "ask">
+        <h5> How much are you taking out in loans? Out of 10k </h5>
         <input id = "textbox" type = "number" name = "question1">
-        <h5> How many credit-hours are you taking in school? </h5>
+        <h5> How many hours are you going to work a week? Put 0 if you aren't working. </h5>
         <input id = "textbox" type = "number" name = "question2">
-        <h5> How many hours will you spend on hw each week? </h5>
+        <h5> How much percent of your money are you going to save/pay back your loan? Again, put 0 if you aren't working or aren't saving. </h5>
         <input id = "textbox" type = "number" name = "question3">
-        <h5> How many hours will you work a week? </h5>
+        <h5> How much money is your recreational expenses going to cost? Estimate for a week. </h5>
         <input id = "textbox" type = "number" name = "question4">
-        <h5> How many hours do you spend on household chores (cleaning and cooking)? </h5>
-        <input id = "textbox" type = "number" name = "question5">
 
         <input id = "button" type = "button" value = "Done!" onclick = "check();">
     </form>
-	</div>
+  </div>
 
-	<div id = "after_submit">
-	<p id = "number_correct"></p>
-	</div>
-	</html>
-      
+  <div id = "after_submit">
+  <p id = "number_correct"></p>
+
+  <img id ="happy" src="happy1.png" alt="" width=200px height=250p>
+  <img id ="worried" src="worried1.png" alt="" width=200px height=250p>
+  <img id ="sad" src="sad1.png" alt="" width=200px height=250p>
+
+  </div>
+  </html>
+
 </body>
 </html>

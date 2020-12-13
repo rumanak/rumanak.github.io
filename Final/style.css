@@ -126,3 +126,24 @@ margin-right: auto;
   margin-right: auto;
   display: block;
 }
+
+.grid-container2 {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto;
+  background-color: #c2c2ff;
+  padding: 40px;
+}
+.gird-items {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#after_submit {
+  visibility: hidden;
+}
+
+footer {
+  background: #9999ff; 
+}
