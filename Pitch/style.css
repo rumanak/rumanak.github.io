@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #c2c2ff; 
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background: #9999ff;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.navLinks {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #737FA5;
+  padding: 3vw;
+}
+a.navLinks:visited {
+  color: white;
+}
+a.navLinks:hover {
+  color: white;
+}
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	color: #B38888;
+	font-family: Montserrat, Helvetica, Arial;
+	font-size: 32px;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+	color: #737FA5;
+	font-family: Montserrat, Helvetica, Arial;
+  	font-size: 22px;
+  	padding-left: 1%;
+  	padding-right: 1%;
+}
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+  font-family: Montserrat, Helvetica, Arial;
+  font-size: 20px;
+}
+h4 {
+  text-align: center;
+  color: #C58282;
+  font-family: Montserrat, Helvetica, Arial;
+  font-size: 16px;
+}
+h5 {
+  color: #737FA5;
+  font-family: Montserrat, Helvetica, Arial;
+    font-size: 22px;
+}
+p{
+  text-align: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.blue {
+  background-color: #c2c2ff; 
+}
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: #c2c2ff;
+  padding: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gird-item {
+  background-color: #c2c2ff;
+  font-size: 30px;
+  text-align: center;
+}
+.Questions{
+  padding-left: 20px;
+  padding: 1%;
+  background-color: #ffffc2;
+}
+aside {
+  width:30%;
+  padding-left: 2%;
+  padding: 1%;
+  float: left;
+  background-color: #ffffc2;
+}
+
+#carousel-container {
+    margin: 25px auto 0px auto;
+    max-width: 90%;
+}
+
+.color {
+border-style: ridge;
+padding: 1%;
+width: 50%;
+margin-left: 42.5%;
+background-color: #D6D6FF;
+text-align: center;
+}
+
+.con {
+border-style: ridge;
+padding: 1%;
+width: 80%;
+background-color: #D6D6FF;
+text-align: center;  
+margin-left: auto;
+margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto;
+  background-color: #c2c2ff;
+  padding: 40px;
+}
+.gird-items {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#after_submit {
+  visibility: hidden;
+}
+
+footer {
+  background: #9999ff; 
+}
